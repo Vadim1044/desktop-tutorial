@@ -18,6 +18,8 @@ public class HelloWorld{
                 if(g>b && a>b){
                     min+=1;
                 }
+            a=b;
+            b=g;
             }
         }
     Console.WriteLine(min);
