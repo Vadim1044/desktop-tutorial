@@ -6,7 +6,7 @@ public static class Program
     {
         int n = Convert.ToInt32(Console.ReadLine());
         int b = 0;
-        int max = n;
+        int min = n;
         for (int i = 0; i < n; i++)
         {
             int g = Convert.ToInt32(Console.ReadLine());
@@ -14,18 +14,14 @@ public static class Program
             {
                 b++;
             }
-            else{
-                if (max>b){
-                    max=b;
+            if(g % 2 != 0 || i == (n-1)){
+                Console.WriteLine(b);
+                if (min>b && b!=0){
+                    min=b;
                 }
                 b=0;
             }
-            if (i == (n-1)){
-                if (max>b){
-                    max=b;
-                }
-                Console.WriteLine(max);
-            }
         } 
+        Console.WriteLine(min);
     } 
 }
