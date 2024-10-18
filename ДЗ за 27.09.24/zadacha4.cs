@@ -10,12 +10,12 @@ public class HelloWorld{
             if (a%2 == 0){
                 temp++;
             }
+            else if (a%2 != 0){
+                temp=0;
+            }
             if (max<temp){
                     max=temp;
                 }
-            else{
-                temp=0;
-            }
         }
     Console.WriteLine(max);
     }
