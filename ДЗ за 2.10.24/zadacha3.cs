@@ -5,7 +5,7 @@ public static class Program
     {
         int n = Convert.ToInt32(Console.ReadLine());
         int b = 0;
-        int max = 1;
+        int max = 0;
         for (int i = 0; i < n; i++)
         {
             int g = Convert.ToInt32(Console.ReadLine());
