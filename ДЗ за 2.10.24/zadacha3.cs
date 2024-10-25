@@ -9,6 +9,9 @@ public static class Program
         for (int i = 0; i < n; i++)
         {
             int g = Convert.ToInt32(Console.ReadLine());
+            if (max > g){
+                max = g;
+            }
             if (g % 2 == 0)
             {
                 b+=g;
