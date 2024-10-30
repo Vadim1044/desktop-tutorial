@@ -21,6 +21,7 @@ public static class Program
                 b=0;
             }
         } 
+        Console.WriteLine("Минимальная длина последовательности четных элементов:");
         Console.WriteLine(min);
     } 
 }
