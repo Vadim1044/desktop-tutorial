@@ -15,7 +15,6 @@ public static class Program
                 b++;
             }
             if(g % 2 != 0 || i == (n-1)){
-                Console.WriteLine(b);
                 if (min>b && b!=0){
                     min=b;
                 }
