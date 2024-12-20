@@ -5,26 +5,26 @@ public static class Program
     {
         int n = Convert.ToInt32(Console.ReadLine());
         int b = 0;
-        int max = 0;
+        int max = -10000000;
         for (int i = 0; i < n; i++)
         {
             int g = Convert.ToInt32(Console.ReadLine());
-            if (max > g){
-                max = g;
-            }
             if (g % 2 == 0)
             {
                 b+=g;
             }
             else
             {
+                if (max < b && b!=0)
+                {
+                    max = b;
+                }
                 b = 0;
             }
-            if (max < b)
+            if (max < b && i==n-1)
             {
                 max = b;
             }
-
         } 
         Console.WriteLine(max); 
     } 
