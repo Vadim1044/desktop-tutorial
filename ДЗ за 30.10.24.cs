@@ -2,7 +2,7 @@ using System;
     
     public class HelloWorld{
         public static void Main(string[] args){
-            Console.Write("n=");
+            Console.Write("Введите колво элементов массива");
             int n = Convert.ToInt32(Console.ReadLine());
             int [] array = new int[n];
 
@@ -16,7 +16,7 @@ using System;
             
             
             for (int i = 0; i < n; i++){
-                Console.Write("Array=");
+                Console.Write("Array["+i+"]=");
                 int g = Convert.ToInt32(Console.ReadLine());
                 A[i] = g;
             }
